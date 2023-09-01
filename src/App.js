@@ -1,6 +1,7 @@
 import './App.css';
-import Counter from './components/Counter/Counter'
-import Navbar from './components/navbar/navbar';
+import CovidTracker from './components/Covid19Tracker/CovidTracker';
+// import Counter from './components/Counter/Counter'
+import Navbar from './components/Navbar/Navbar';
 const App =()=> {
   const username ="Bimal";
   const user = {
@@ -22,8 +23,9 @@ content="user is not logged in"
     <div className="App">
       {content}
       <header className="App-header">
-        <Counter></Counter>
+        {/* <Counter></Counter> */}
         <h5>Welcome To React {username}</h5>
+        <CovidTracker></CovidTracker>
         <img alt={user.username} src={user.imageUrl} style={{width:user.imageSize,height:user.imageSize}}/>
        <button className='myname' >i'm button</button>
       </header>
